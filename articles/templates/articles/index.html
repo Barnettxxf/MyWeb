@@ -1,0 +1,166 @@
+{% extends "articles/base.html" %}
+{% block content %}
+{% load static %}
+<!--//outer-wp-->
+<div class="outter-wp">
+    <!--/sub-heard-part-->
+    <div class="sub-heard-part">
+        <ol class="breadcrumb m-b-0">
+            <li><a href="#">Home</a></li>
+            <li class="active">Welcome</li>
+        </ol>
+    </div>
+    <!--/sub-heard-part-->
+    <!--/tabs-->
+    <div class="tab-main">
+        <!--/tabs-inner-->
+        <div class="tab-inner">
+            <div id="tabs" class="tabs">
+                <h2 class="page-header">Welcome to Barnett simple website!</h2>
+                <div class="graph">
+                    <nav>
+                        <ul>
+                            <li><a href="#section-1" class="icon-cup"><i class="lnr lnr-chart-bars"></i>
+                                <span>Charts</span></a></li>
+                            <li><a href="#section-2" class="icon-shop"><i class="lnr lnr-film-play"></i>
+                                <span>Resume</span></a></li>
+                            <li><a href="#section-3" class="icon-food"><i class="fa fa-table"></i>
+                                <span>MyNotes</span></a></li>
+                        </ul>
+                    </nav>
+                    <div class="content tab">
+                        <section id="section-1">
+                            <div class="mediabox" style="height: 310px">
+                                <i class="fa fa-coffee" style="width: 342.69px"></i>
+                                <h3>拉勾招聘信息数据</h3>
+                                <p>招聘信息数据<br/>
+                                    职位信息数据<br/>
+                                    <br/>
+                                </p>
+                                <a href="{% url 'articles:chart' %}" class="btn btn-block"
+                                   style="width: 100%;margin: 0;float: bottom">Read more / Details</a>
+                            </div>
+                            <div class="mediabox" style="height: 310px">
+                                <i class="fa fa-trophy" style="width: 342.69px"></i>
+                                <h3>新浪财经数据</h3>
+                                <p>每日领涨分类<br/>
+                                    各行业（分类）领涨股<br/>
+                                    <br/>
+                                </p>
+                                <a href="{% url 'articles:chart' %}" class="btn btn-block"
+                                   style="width: 100%;margin: 0;float: bottom">Read more / Details</a>
+                            </div>
+                            <div class="mediabox">
+                                <i class="fa fa-leaf" style="width: 342.69px"></i>
+                                <h3>免费IP代理</h3>
+                                <p>免费IP代理http<br/>
+                                    免费IP代理http，https<br/>
+                                    免费IP代理https<br/>
+                                </p>
+                                <a href="{% url 'articles:chart' %}" class="btn btn-block"
+                                   style="width: 100%;margin: 0">Read more / Details</a>
+                            </div>
+                        </section>
+                        <section id="section-2">
+                            <div class="mediabox" style="height: 310px">
+                                <i class="fa fa-coffee" style="width: 342.69px"></i>
+                                <h3>项目经验</h3>
+                                <p>基于Django的个人简单网站<br/>
+                                    分布式爬虫爬取拉勾全网职位信息<br/>
+                                    易拓展IP代理池爬虫框架<br/>
+                                </p>
+                                <a href="{% url 'articles:resume' %}" class="btn btn-block"
+                                   style="width: 100%;margin: 0;float: bottom">Read more / Details</a>
+                            </div>
+                            <div class="mediabox" style="height: 310px">
+                                <i class="fa fa-trophy" style="width: 342.69px"></i>
+                                <h3>个人技能</h3>
+                                <p>MySQL / Redis / MongoDB<br/>
+                                    Scrapy / Pyspider / Requests<br/>
+                                    Python / Linux<br/>
+                                </p>
+                                <a href="{% url 'articles:resume' %}" class="btn btn-block"
+                                   style="width: 100%;margin: 0;float: bottom">Read more / Details</a>
+                            </div>
+                            <div class="mediabox">
+                                <i class="fa fa-leaf" style="width: 342.69px"></i>
+                                <h3>自我评价</h3>
+                                <p>根据自我需求，多做项目并完善<br/>
+                                    学习能力强，自制能力强，做事情有计划<br/>
+                                    关注新技术<br/>
+                                </p>
+                                <a href="{% url 'articles:resume' %}" class="btn btn-block"
+                                   style="width: 100%;margin: 0">Read more / Details</a>
+                            </div>
+                        </section>
+                        <section id="section-3">
+                            <div class="mediabox" style="height: 310px">
+                                <i class="fa fa-coffee" style="width: 342.69px"></i>
+                                <h3>学习日记</h3>
+                                <p><a href="#">2018-04-03</a> <br/>
+                                    <a href="#">2018-04-02</a> <br/>
+                                    <a href="#">2018-04-01</a> <br/>
+                                </p>
+                                <a href="{% url 'articles:inbox' %}" class="btn btn-block"
+                                   style="width: 100%;margin: 0;float: bottom">Read more / Details</a>
+                            </div>
+                            <div class="mediabox" style="height: 310px;">
+                                <i class="fa fa-trophy" style="width: 342.69px"></i>
+                                <h3>项目介绍</h3>
+                                <p><a href="#">ProxyPool（易拓展IP代理池爬虫框架）</a> <br/>
+                                    <a href="#">LagouRedis（分布式爬虫爬取拉勾全网职位信息）</a> <br/>
+                                    <a href="#">Xinlangfinance（新浪财经爬虫）</a> <br/>
+                                </p>
+                                <a href="{% url 'articles:inbox' %}" class="btn btn-block"
+                                   style="width: 100%;margin: 0;float: bottom">Read more / Details</a>
+                            </div>
+                            <div class="mediabox">
+                                <i class="fa fa-leaf" style="width: 342.69px"></i>
+                                <h3>备忘录</h3>
+                                <p>——<br/>
+                                    ——<br/>
+                                    ——<br/>
+                                </p>
+                                <a href="{% url 'articles:inbox' %}" class="btn btn-block"
+                                   style="width: 100%;margin: 0">Read more / Details</a>
+                            </div>
+                        </section>
+                    </div><!-- /content -->
+                </div>
+                <!--<div class="page-container">-->
+                <!--<div class="mediabox" style="height: 400px; padding: 100px 0">-->
+                <!--<i class="fa fa-coffee"></i>-->
+                <!--<h3>Sushi Gumbo Beetroot</h3>-->
+                <!--<p>Chickweed okra pea winter purslane coriander yarrow sweet pepper radish garlic-->
+                <!--brussels sprout groundnut summer purslane earthnut pea tomato spring onion azuki-->
+                <!--bean gourd. </p>-->
+                <!--</div>-->
+                <!--<div class="mediabox" style="height: 400px; padding: 100px 0">-->
+                <!--<i class="fa fa-trophy"></i>-->
+                <!--<h3>Pea Sprouts Fava Soup</h3>-->
+                <!--<p>Chickweed okra pea winter purslane coriander yarrow sweet pepper radish garlic-->
+                <!--brussels sprout groundnut summer purslane earthnut pea tomato spring onion azuki-->
+                <!--bean gourd. </p>-->
+                <!--</div>-->
+                <!--<div class="mediabox" style="height: 400px; padding: 100px 0">-->
+                <!--<i class="fa fa-leaf"></i>-->
+                <!--<h3>Turnip Broccoli Sashimi</h3>-->
+                <!--<p>Chickweed okra pea winter purslane coriander yarrow sweet pepper radish garlic-->
+                <!--brussels sprout groundnut summer purslane earthnut pea tomato spring onion azuki-->
+                <!--bean gourd. </p>-->
+                <!--</div>-->
+                <!--</div>-->
+                <!-- /tabs -->
+
+            </div>
+            <script src="{% static 'articles/js/cbpFWTabs.js' %}"></script>
+            <script>
+                new CBPFWTabs(document.getElementById('tabs'));
+            </script>
+            <div class="clearfix"></div>
+        </div>
+    </div>
+    <!--//tabs-inner-->
+</div>
+<!--//outer-wp-->
+{% endblock %}

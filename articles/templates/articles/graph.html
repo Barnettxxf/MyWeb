@@ -1,0 +1,23 @@
+{% extends "articles/base.html" %}
+{% block content %}
+{% load static %}
+								<div class="outter-wp">
+								<!--sub-heard-part-->
+								   <div class="sub-heard-part">
+								   <ol class="breadcrumb m-b-0">
+										<li><a href="index.html">Home</a></li>
+										<li class="active">Graph Visualization</li>
+									</ol>
+								   </div>
+								  <!--//sub-heard-part-->
+								<div class="graph-visual">
+											<h2 class="inner-tittle">Graph Visualization </h2>
+															<div class="graph">
+																	 <div id="maps"><a href="/">back</a><ul></ul></div>
+																		<canvas id="viewport" width="1200" height="600"></canvas>
+
+															</div>
+										<!--//outer-wp-->
+									</div>
+								</div>
+{% endblock %}

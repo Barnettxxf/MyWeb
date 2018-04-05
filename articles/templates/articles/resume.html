@@ -1,0 +1,251 @@
+{% extends "articles/base.html" %}
+{% block content %}
+{% load static %}
+<!--outter-wp-->
+<div class="outter-wp">
+    <!--sub-heard-part-->
+    <div class="sub-heard-part">
+        <ol class="breadcrumb m-b-0">
+            <li><a href="{% url 'articles:index' %}">Home</a></li>
+            <li class="active">Resume</li>
+        </ol>
+    </div>
+    <!--//sub-heard-part-->
+    <!--/profile-->
+    <h3 class="sub-tittle pro">My Resume</h3>
+    <div class="profile-widget">
+        <img src="{% static 'articles/images/barnett.jpg' %}" style="max-height: 150px" alt="帅哥照片"/>
+        <h2>徐雄峰</h2>
+        <p>目标职位：Python爬虫工程师，数据相关亦可</p>
+    </div>
+    <!--/profile-inner-->
+    <div class="profile-section-inner">
+        <div class="col-md-6 profile-info">
+            <!--个人信息-->
+            <h3 class="inner-tittle">个人信息</h3>
+            <div class="main-grid3">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="p-20">
+                            <div class="about-info-p">
+                                <p class="text-muted"><strong>姓&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;名: </strong>徐雄峰</p>
+                            </div>
+                            <div class="about-info-p">
+                                <p class="text-muted"><strong>性&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;别： </strong>男</p>
+                            </div>
+                            <div class="about-info-p m-b-0">
+                                <p class="text-muted"><strong>学&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;历： </strong>本科</p>
+                            </div>
+                            <div class="about-info-p">
+                                <p class="text-muted"><strong>英语水平： </strong>CET 6</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="p-20">
+                            <div class="about-info-p">
+                                <p class="text-muted"><strong>出生年月： </strong>1993.07</p>
+                            </div>
+                            <div class="about-info-p">
+                                <p class="text-muted"><strong>住&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;址： </strong>广东深圳</p>
+                            </div>
+                            <div class="about-info-p">
+                                <p class="text-muted"><strong>电&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;话： </strong>15102096586</p>
+                            </div>
+                            <div class="about-info-p">
+                                <p class="text-muted hover"><strong>邮&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;箱： </strong><a href="mailto:15102096586@163.com">15102096586@163.com</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <!--履历-->
+            <h3 class="inner-tittle two">履 历</h3>
+            <div class="main-grid3 p-skill">
+
+                <ul class="timeline">
+                    <li>
+                        <div class="timeline-badge danger"><i class="fa fa-times-circle-o"></i></div>
+                        <div class="timeline-panel">
+                            <div class="timeline-heading">
+                                <h4 class="timeline-title"><a href="#">目前离职，求职ing...</a></h4>
+                            </div>
+                            <div class="timeline-body">
+                                <p class="time">2018.3 - until now</p>
+                                <p>Python爬虫工程师职位，数据相关的职位亦可</p>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class="timeline-badge primary"><i class="fa fa-star-o"></i></div>
+                        <div class="timeline-panel">
+                            <div class="timeline-heading">
+                                <h4 class="timeline-title"><a href="#">燕加隆家居建材股份有限公司</a></h4>
+                            </div>
+                            <div class="timeline-body">
+                                <p class="time">2016.7 - 2018.3</p>
+                                <p>
+                                    产品设计专员:<br/>
+                                    主要工作内容：负责幕墙，铝窗，护栏方案设计，施工加工图绘制，提供售后技术问题解决方案；<br/>
+                                    荣誉：工作期间获2017年度设计精英奖；
+                                </p>
+                            </div>
+                        </div>
+                    </li>
+
+
+                    <li>
+                        <div class="timeline-badge info"><i class="fa fa-smile-o"></i></div>
+                        <div class="timeline-panel">
+                            <div class="timeline-heading">
+                                <h4 class="timeline-title"><a href="#">武汉理工大学</a></h4>
+                            </div>
+                            <div class="timeline-body">
+                                <p class="time">2012.9 - 2016.6</p>
+                                <p>专业：机械工程及其自动化;<br/>
+                                    荣誉及奖项：院三好学生三次，校三等奖学金三次；<br/>
+                                    在校职务：心协机电分会会长，副班长;
+                                </p>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+                <div class="clearfix"></div>
+            </div>
+            <!--技能-->
+            <h3 class="inner-tittle two">技 能</h3>
+            <div class="main-grid3">
+                <div class="bar">
+                    <p>Scrapy / Pyspider / Requests</p>
+                </div>
+                <div class="progress" style="height: 20px">
+                    <div class="progress-bar progress-bar-info" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width:90%;">
+                        <span>90%</span>
+                    </div>
+                </div>
+                <div class="bar">
+                    <p>xpath,css,re 网页结构化信息提取 </p>
+                </div>
+                <div class="progress" style="height: 20px">
+                    <div class="progress-bar progress-bar-info" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width:90%">
+                        <span>90%</span>
+                    </div>
+                </div>
+                <div class="bar">
+                    <p>反反爬虫技术（静动态页面，selenium，splash，验证码机制等）</p>
+                </div>
+                <div class="progress" style="height: 20px">
+                    <div class="progress-bar progress-bar-info" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width:85%">
+                        <span>85%</span>
+                    </div>
+                </div>
+                <div class="bar">
+                    <p>MySQL / Redis / MongoDB（常用操作）</p>
+                </div>
+                <div class="progress" style="height: 20px">
+                    <div class="progress-bar progress-bar-info" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width:85%">
+                        <span>85%</span>
+                    </div>
+                </div>
+                <div class="bar">
+                    <p>Python / Linux</p>
+                </div>
+                <div class="progress" style="height: 20px">
+                    <div class="progress-bar progress-bar-info" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width:80%">
+                        <span>80%</span>
+                    </div>
+                </div>
+                <div class="bar">
+                    <p>HTML / CSS3 / Javascript / JQuery</p>
+                </div>
+                <div class="progress" style="height: 20px">
+                    <div class="progress-bar progress-bar-info" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width:70%">
+                        <span>70%</span>
+                    </div>
+                </div>
+                <div class="bar">
+                    <p>Django / Boostrap</p>
+                </div>
+                <div class="progress" style="height: 20px">
+                    <div class="progress-bar progress-bar-info" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width:65%">
+                        <span>65%</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6 profile-info two">
+            <!--项目经验-->
+            <h3 class="inner-tittle">项目经验</h3>
+            <div class="main-grid3 p-skill">
+                <p>
+                    <strong>项目名称</strong>：基于Django的个人网站<br/>
+                    <strong>项目描述</strong>：个人网站，内含个人简历，爬取数据可视化（拉勾招聘信息，新浪财经，免费IP代理）及分布式爬虫项目管理（基于Scrapyd）等功能<br/>
+                    <strong>开发环境</strong>：Ubuntu、Pycharm<br/>
+                    <strong>主要职责</strong>：基于Django框架搭建网站架构；
+                    利用Apache2简易部署Web服务；
+                    用MySQL数据库和MongoDB数据库做数据管理；
+                    拉勾招聘信息数据，新浪财经数据及免费IP代理数据处理分析及其可视化；学习日记展示
+                    <br/>
+                    <strong>数据可视化</strong>：<a href="#">拉勾全网职位信息可视化链接</a> <span style="color: grey">|</span> <a href="#">新浪财经可视化链接</a> <span style="color: grey">|</span>  <a href="#">IP代理可视化链接</a>
+                </p>
+                <hr/>
+                <p>
+                    <strong>项目名称</strong>：分布式爬虫爬取拉勾全网职位信息<br/>
+                    <strong>项目描述</strong>：爬取拉勾网的招聘信息和职位信息。包括职位ID,职位名称,职位公司名称, 职位优)等十九个字段<br/>
+                    <strong>开发环境</strong>：Ubuntu、Pycharm<br/>
+                    <strong>主要职责</strong>：网页结构分析，采用scrapy框架搭建爬虫程序的架构，利用scrapy-redis组件实现分布式；
+                    编写程序完成网页的爬取，根据需求，负责网页信息抽取、数据清洗工作;
+                    用MySQL数据库做持久化存储；
+                    爬虫程序的性能优化，及时处理网站升级后反爬问题；
+                    利用scrapyd远程部署爬虫;
+                    定时清理redis冗余;
+                    <br/>
+                    <strong>类似项目</strong>：新浪财经，虎嗅网…<br/>
+                    <strong>数据可视化</strong>：<a href="#">拉勾全网职位信息可视化链接</a><br/>
+                </p>
+                <hr/>
+                <p>
+                    <strong>项目名称</strong>：易拓展IP代理池爬虫框架<br/>
+                    <strong>项目描述</strong>：基于scrapy框架，实现一个抓取免费IP代理网站的爬虫框架。其只需要编写对应代理网站的网页xpath提取规则，以及添加对应网站特有的item清理规则插件即可添加新的IP代理网站的爬取任务。 它包含ip，ip_img_url，port，port_img_url等十四个字段爬取。<br/>
+                    <strong>开发环境</strong>：Ubuntu、Pycharm<br/>
+                    <strong>主要职责</strong>：研究多个IP代理网站结构，基于scrapy框架搭建同类网站易拓展的爬虫框架；
+                    编写程序完成网页的爬取，根据需求，负责网页信息抽取、数据清洗工作；
+                    用MySQL数据库做持久化存储，用SQlAlchemy管理网页提取规则；
+                    爬虫程序的性能优化，及时处理网站升级后反爬问题；
+                    通过图片识别算法识别用图片显示的数据；
+                    利用scrapyd远程部署爬虫;
+                    使用cron服务实时更新并筛选数据；
+                    <br/>
+                    <strong>数据可视化</strong>：<a href="#">IP代理池可视化链接</a><br/>
+                </p>
+            </div>
+            <!--自我评价-->
+            <h3 class="inner-tittle two">自我评价</h3>
+            <div class="main-grid3 p-skill">
+                <h4>劣势：</h4>
+                <p>1.非计算机专业出身，对于计算机科学基础知识较为薄弱，浮于应用层的技术使用；<br/>
+                    2.没有实际的相关工作经验，代码没有投入过真正的生产环境，对突发状况的应变处理和有相关工作经验的人相比会相对慢些；
+                </p>
+                <hr/>
+                <h4>优势：</h4>
+                <p>1.学习能力强，自制能力强，做事情有计划，针对自我薄弱的计算机基础知识点，正在补充数据结构与算法，软件开发等相关知识的学习；<br/>
+                    2.根据自我需求，多做项目并完善，如分布式爬取拉勾网招聘信息，易拓展的IP代理池爬虫框架，新浪财经爬虫等，以及展示爬虫成果的web页面；<br/>
+                    3.勤奋好学，除了爬虫技术，对Web前端也有一定的了解，熟悉JS,HTML5,CSS,jQuery,Bootstrap等，结合python可做简单的页面；<br/>
+                    4.关注新技术。了解常用的机器学习算法，例如线性回归，逻辑回归，决策树，随机森林，SVN，K-MEANS，xgboots等的原理和基本使用；
+                </p>
+            </div>
+
+        </div>
+        <!--/map-->
+        <div class="clearfix"></div>
+    </div>
+
+    <!--//profile-inner-->
+    <!--//profile-->
+</div>
+<!--//outer-wp-->
+
+{% endblock %}
